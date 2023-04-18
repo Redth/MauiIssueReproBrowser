@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiReproBrowser.Issues._12103.Index12103"
+             Title="Index12103">
+    <Grid RowDefinitions="Auto, *">
+        <Button Text="click" BackgroundColor="Blue" Clicked="Button_Clicked" />
+        <Button Text="second click me" BackgroundColor="Red" Grid.Row="1" />
+    </Grid>
+
+</ContentPage>

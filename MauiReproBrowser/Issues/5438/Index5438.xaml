@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiReproBrowser.Issues._5438.Index5438"
+             Title="Index5438">
+    <VerticalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="Icon: "/>
+
+            <Image HeightRequest="20" 
+                     Source="https://cdn4.iconfinder.com/data/icons/web-ui-color/128/Compose-512.png" 
+                     BackgroundColor="LightBlue"/>
+
+            <Label Text=" edit"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
