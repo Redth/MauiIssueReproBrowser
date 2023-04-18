@@ -6,16 +6,18 @@
     <CollectionView ItemsSource="{Binding Issues}" SelectionChanged="CollectionView_SelectionChanged" SelectionMode="Single">
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,*" ColumnSpacing="10" RowSpacing="4" Padding="10">
+                <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*" ColumnSpacing="10" RowSpacing="4" Padding="10">
                     <Label 
                         Text="{Binding Issue.Number}"
-                        Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" 
+                        Grid.Row="0" Grid.Column="0" 
                         VerticalOptions="Center"
                         FontAttributes="Bold" />
 
-                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Issue.Title}" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Issue.Title}" FontAttributes="Bold" />
 
-                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Issue.Url}" TextColor="Blue" TextDecorations="Underline" HorizontalOptions="Start">
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Issue.IssuePlatforms}" />
+
+                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Issue.Url}" TextColor="Blue" TextDecorations="Underline" HorizontalOptions="Start">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                         </Label.GestureRecognizers>

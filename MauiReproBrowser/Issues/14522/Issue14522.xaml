@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiReproBrowser.Issues._14522.Issue14522"
+             Title="Issue14522"
+             Padding="20">
+    <Grid InputTransparent="True" CascadeInputTransparent="False">
+        <Button Text="This is a button" Clicked="Button_Clicked" />
+    </Grid>
+</ContentPage>
