@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiReproBrowser.Issues._14562.Issue14562B"
+             Title="Issue14562B">
+    <VerticalStackLayout>
+        <Button Text="MakeVisible" Command="{Binding MakeVisibleCommand}" />
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Text="Upper limit" VerticalOptions="Center"/>
+        <CheckBox Grid.Row="0" Grid.Column="1" IsChecked="{Binding IsUpperLimitActive}" Margin="10,0,0,0" />
+        <Entry Text="{Binding UpperLimitValue}" Grid.Row="1" Grid.ColumnSpan="2" IsSpellCheckEnabled="False" ClearButtonVisibility="Never" BackgroundColor="#232323" TextColor="White" MinimumHeightRequest="48" Margin="5, 0, 5, 5" VerticalTextAlignment="Center" HorizontalOptions="Fill" HorizontalTextAlignment="Start" />
+        <Label Grid.Row="2" Text="Lower limit" VerticalOptions="Center"/>
+        <CheckBox Grid.Row="2" Grid.Column="1" IsChecked="{Binding IsLowerLimitActive}" Margin="10,0,0,0" />
+        <Entry Text="{Binding LowerLimitValue}" IsVisible="{Binding IsLowerLimitActive}" Grid.Row="3" Grid.ColumnSpan="2" IsSpellCheckEnabled="False" ClearButtonVisibility="Never" BackgroundColor="#232323" TextColor="White" MinimumHeightRequest="48" Margin="5, 0, 5, 5" VerticalTextAlignment="Center" HorizontalOptions="Fill" HorizontalTextAlignment="Start" />
+    </Grid>
+    </VerticalStackLayout>
+</ContentPage>
