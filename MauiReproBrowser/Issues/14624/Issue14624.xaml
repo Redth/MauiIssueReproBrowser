@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiReproBrowser.Issues._14624.Issue14624"
+             Title="Issue14624">
+    <ScrollView>
+        <VerticalStackLayout x:Name="stack" Spacing="6">
+            
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
