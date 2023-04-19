@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiReproBrowser.Issues._14296.Issue14296"
+             Title="Issue14296">
+    <ScrollView x:Name="scrollView">
+        <VerticalStackLayout Padding="20">
+
+            <Label Text="Sharing" FontSize="20" FontAttributes="Bold" Margin="0,0,0,10" />
+            <Label Text="You can share your Pool's Name, Volume and Recent Test logs with others which can be useful in helping you diagnose problems with your water chemistry." />
+
+
+            <Grid RowSpacing="8" ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto" Margin="0,20,0,0">
+
+                <CheckBox Grid.Row="0" Grid.Column="0"  />
+                <Label
+						Grid.Row="0" Grid.Column="1"
+						Text="Link from TroubleFreePool.com user profile"
+						VerticalOptions="Center"
+						  />
+
+
+                <CheckBox Grid.Column="0" Grid.Row="1"  />
+                <Label
+						Grid.Column="1" Grid.Row="1"
+						Text="Anyone with a unique link"
+						VerticalOptions="Center" />
+
+                <Label
+						Grid.Row="2" Grid.Column="1"
+						Text="https://example.com/url123456"
+						TextDecorations="Underline"
+						>
+                  
+                </Label>
+
+                <Label
+						Grid.Row="3" Grid.Column="0"
+						Grid.ColumnSpan="2"
+						Text="Thanks for sharing your pool's data anonymously to help improve Pool Math!"
+                        FontAttributes="Italic"
+						Margin="0,20,0,0" />
+                <Button
+						Grid.Row="4"
+						Grid.Column="0" Grid.ColumnSpan="2"
+						Background="Transparent"
+						BorderWidth="0"
+                        TextColor="Blue"
+						Text="Learn more..."
+						HorizontalOptions="FillAndExpand" />
+            </Grid>
+
+            <Button Margin="20,10,20,7" Text="Advanced Settings" HorizontalOptions="FillAndExpand" />
+
+            <Button Margin="20,7,20,20" HorizontalOptions="FillAndExpand" Text="Delete this Pool" />
+
+            <ContentView HeightRequest="20" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
