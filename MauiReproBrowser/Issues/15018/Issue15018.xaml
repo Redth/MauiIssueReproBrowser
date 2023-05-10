@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiReproBrowser.Issues._15018.Issue15018"
+             Title="Issue15018">
+    <Grid
+        ColumnDefinitions="630, *"
+        RowDefinitions="48, *"
+        Background="Gray">
+
+        <Grid
+            ColumnDefinitions="*, 48"
+            ColumnSpacing="16"
+            Background="Green"
+            Padding="16, 0, 0, 0">
+
+            <BoxView Grid.ColumnSpan="2"
+                     VerticalOptions="Start"
+                     HeightRequest="2"
+                     Color="Yellow"/>
+
+            <Grid Grid.Column="1">
+                <BoxView
+                    HeightRequest="24"
+                    WidthRequest="24"
+                    Opacity="0.8"
+                    Color="Red" />
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentPage>
